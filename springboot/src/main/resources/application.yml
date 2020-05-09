@@ -5,10 +5,11 @@ spring:
     name: spring-boot-demo
 logging:
   file:
+    path: /var/log
     name: /var/log/demo.log
     max-history: 1
   pattern:
     console: "%d [%thread] %-5level %40logger{40} - %msg%n"
     file: "%d [%thread] %-5level %40logger{40} - %msg%n"
     level: DEBUG
-    rolling-file-name: "/var/log/archive/${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz)"
+    rolling-file-name: "/var/log/archive/${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz"
