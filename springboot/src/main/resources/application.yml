@@ -3,6 +3,12 @@ server:
 spring:
   application:
     name: spring-boot-demo
+#  mvc:
+#    pathmatch:
+#      use-suffix-pattern: false
+#      use-registered-suffix-pattern: true
+#    contentnegotiation:
+#      favor-path-extension: true
 logging:
   file:
     path: /var/log
