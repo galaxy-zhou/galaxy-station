@@ -9,6 +9,8 @@ spring:
 #      use-registered-suffix-pattern: true
 #    contentnegotiation:
 #      favor-path-extension: true
+
+#Logback配置
 logging:
   file:
     path: /var/log
@@ -18,4 +20,4 @@ logging:
     console: "%d [%thread] %-5level %40logger{40} - %msg%n"
     file: "%d [%thread] %-5level %40logger{40} - %msg%n"
     level: DEBUG
-    rolling-file-name: "/var/log/archive/${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz"
+    rolling-file-name: "/var/log/archive/demo.%d{yyyy-MM-dd}.%i.gz"
